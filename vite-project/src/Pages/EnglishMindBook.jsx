@@ -1,3 +1,4 @@
+import books from "../Data/EnglishMind";
 function English()
 {
     return(
@@ -16,3 +17,4 @@ function English()
  </div>
     )
 }
+export default English

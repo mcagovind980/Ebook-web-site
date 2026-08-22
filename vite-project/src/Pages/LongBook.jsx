@@ -1,4 +1,4 @@
-import LongBook from "../Data/LongBook1"
+import books from "../Data/LongBook1"
 function LongBook()
 {
     return (
@@ -7,9 +7,9 @@ function LongBook()
 {books.map((books)=>
     (
    <div className="item" key={books.id}>
-    <img src={books.image} alt={title}/>
+    <img src={books.image} alt={books.title}/>
     <h3>{books.title}</h3>
-<a href={books.viewLink}
+<a href={books.Link}
 target="_blank">
     View Pdf
 </a>
@@ -30,4 +30,4 @@ target="_blank">
 
     )
 }
-export default LongBook()
+export default LongBook

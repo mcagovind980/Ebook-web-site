@@ -1,3 +1,4 @@
+import books from "../Data/Brain1"
 function Brain()
  {
     return(
@@ -18,3 +19,4 @@ function Brain()
 
     )
 }
+export default Brain

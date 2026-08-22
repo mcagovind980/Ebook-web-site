@@ -1,17 +1,18 @@
 import books from "../Data/Baiography1";
 
+
 function Home() {
   return (
     <main className="home">
       <div className="card">
         {books.map((book) => (
           <div className="item" key={book.id}>
-            <img src={book.image} alt={book.title} />
+            <img src={book.Image} alt={book.title} />
 
             <h3>{book.title}</h3>
 
             <a
-              href={book.viewLink}
+              href={book.Link}
               target="_blank"
               rel="noopener noreferrer"
             >

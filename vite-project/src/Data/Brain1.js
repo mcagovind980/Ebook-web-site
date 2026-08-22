@@ -6,3 +6,4 @@ const books=[
       viewLink:""
     }
 ]
+export default books

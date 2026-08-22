@@ -1,25 +1,25 @@
-import books from "../Data/Home1";
-import BookCard from "../Pages/Categories";
+// import { Link } from "react-router-dom";
+import books from "../Data/Home1"
 
-function Home() {
-  return (
-    <main className="home">
+function Pages()
+{
+    return(
+ <div className="container">
+<div className="card">
+    {books.map((book)=>
+    (
 
-      <h1>My Books</h1>
+  <div className="title" key={book.id}>
+    <img src={book.image} alt={book.title}/>
+    <h3>{book.title}</h3>
+    <a href={book.path} > View Pages</a>
+</div>
+   )
+    
+    )}
+    </div>
+    </div>
 
-      <div className="card">
-
-        {books.map((book) => (
-          <BookCard
-            key={book.id}
-            book={book}
-          />
-        ))}
-
-      </div>
-
-    </main>
-  );
+    )
 }
-
-export default Home;
+export default Pages

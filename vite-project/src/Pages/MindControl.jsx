@@ -1,3 +1,4 @@
+import books from "../Data/"
 function Mind()
 {
     return(
@@ -21,3 +22,4 @@ view Pdf
 
     )
 }
+export default Mind

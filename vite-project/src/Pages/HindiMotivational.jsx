@@ -1,11 +1,10 @@
-import Hindi from "../Data/Hindi"
-function Hindi()
+import HinM from "../Data/HinM"
+function Hindi1()
 {
     return (
 <div className="container">
 <div className="card">
-{
-books.map((book)=>(
+{ books.map((book)=>(
 <div className="item" key={book.id}>
     <img src={book.image} alt={book.title}/>
     <h3>{book.title}</h3>
@@ -26,4 +25,4 @@ View Pdf
 )
 
 }
-export default Hindi
+export default Hindi1

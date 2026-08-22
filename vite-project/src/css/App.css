@@ -62,17 +62,642 @@ text-decoration: none;
 .home{
     background-color: aqua;
 }
-.card{
-    display: grid;
-    grid-template-columns:repeat(4,1fr) ;
 
-}
  .item{
-    border: 2px solid red;
-    width: 290px;
+    border: 2px solid rgb(255, 3, 3);
+    width: 230px;
     height: 250px;
 } 
+
     img{
-        width: 60px;
+        width: 60pxs;
         
     }
+
+
+
+
+
+
+    /* Main Home Section */
+.home {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #f5f7fb;
+}
+
+/* Books Container */
+.card {
+
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+/* Single Book Card */
+.item {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+
+  padding: 15px;
+  text-align: center;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.item:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Book Image */
+.item img {
+  width: 50%;
+  height: 70%;
+
+  /* object-fit: cover; */
+  border-radius: 10px;
+box-shadow:  3px 4px 7px black;
+  transition: transform 0.3s ease;
+}
+
+/* Image Zoom */
+.item:hover img {
+  transform: scale(1.03);
+}
+
+/* Book Title */
+.item h3 {
+  margin: 15px 0;
+  font-size: 10px;
+  color: #222;
+}
+
+/* View PDF Button */
+.item a {
+  display: inline-block;
+
+  padding: 10px 20px;
+
+  background: #2563eb;
+  color: white;
+
+  text-decoration: none;
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover */
+.item a:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .home {
+    padding: 25px 15px;
+  }
+
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .item img {
+    height: 240px;
+  }
+
+  .item h3 {
+    font-size: 17px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .item img {
+    height: 300px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.home {
+  min-height: 100vh;
+  padding: 40px 5%;
+  background: #f5f5f5;
+}
+
+
+/* =========================
+   BOOKS GRID
+========================= */
+
+.books-grid {
+  max-width: 1400px;
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+
+  gap: 25px;
+}
+
+
+/* =========================
+   BOOK CARD
+========================= */
+
+.book-card {
+  background: #ffffff;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   BOOK IMAGE
+========================= */
+
+.book-image-box {
+  position: relative;
+
+  width: 100%;
+  height: 300px;
+
+  overflow: hidden;
+
+  background: #eeeeee;
+}
+
+.book-image-box img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition: transform 0.4s ease;
+}
+
+.book-card:hover .book-image-box img {
+  transform: scale(1.05);
+}
+
+
+/* =========================
+   DISCOUNT BADGE
+========================= */
+
+.discount {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  padding: 6px 10px;
+
+  background: #e53935;
+
+  color: white;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  border-radius: 5px;
+}
+
+
+/* =========================
+   BOOK INFORMATION
+========================= */
+
+.book-info {
+  padding: 16px;
+}
+
+.category {
+  margin: 0 0 7px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  color: #777;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================
+   BOOK TITLE
+========================= */
+
+.book-info h3 {
+  margin: 0 0 8px;
+
+  font-size: 18px;
+
+  color: #222;
+
+  line-height: 1.4;
+
+  min-height: 50px;
+
+  display: -webkit-box;
+
+  -webkit-line-clamp: 2;
+
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   AUTHOR
+========================= */
+
+.author {
+  margin: 0 0 8px;
+
+  font-size: 14px;
+
+  color: #666;
+}
+
+
+/* =========================
+   RATING
+========================= */
+
+.rating {
+  margin: 8px 0;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #333;
+}
+
+
+/* =========================
+   PRICE
+========================= */
+
+.price-box {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 22px;
+
+  font-weight: bold;
+
+  color: #111;
+}
+
+.original-price {
+  font-size: 14px;
+
+  color: #888;
+
+  text-decoration: line-through;
+}
+
+
+/* =========================
+   STOCK
+========================= */
+
+.stock {
+  margin: 8px 0 15px;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  color: #198754;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.book-buttons {
+  display: flex;
+
+  gap: 10px;
+}
+
+.view-btn,
+.buy-btn {
+  flex: 1;
+
+  padding: 11px 8px;
+
+  border-radius: 7px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+
+/* VIEW PDF BUTTON */
+
+.view-btn {
+  background: #f1f1f1;
+
+  color: #333;
+}
+
+.view-btn:hover {
+  background: #dddddd;
+
+  transform: translateY(-2px);
+}
+
+
+/* BUY NOW BUTTON */
+
+.buy-btn {
+  background: #ff6b00;
+
+  color: white;
+}
+
+.buy-btn:hover {
+  background: #e85f00;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+  .home {
+    padding: 25px 15px;
+  }
+
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+  }
+
+  .book-image-box {
+    height: 250px;
+  }
+
+  .book-info {
+    padding: 12px;
+  }
+
+  .book-info h3 {
+    font-size: 16px;
+  }
+
+  .book-buttons {
+    flex-direction: column;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .home {
+    padding: 15px 10px;
+  }
+
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+  }
+
+  .book-image-box {
+    height: 210px;
+  }
+
+  .book-info {
+    padding: 10px;
+  }
+
+  .book-info h3 {
+    font-size: 14px;
+
+    min-height: 42px;
+  }
+
+  .author {
+    font-size: 12px;
+  }
+
+  .category {
+    font-size: 10px;
+  }
+
+  .rating {
+    font-size: 12px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .original-price {
+    font-size: 12px;
+  }
+
+  .stock {
+    font-size: 11px;
+  }
+
+  .view-btn,
+  .buy-btn {
+    font-size: 11px;
+
+    padding: 8px 4px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 8%;
+  background: #f5f7fb;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.title {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+.title:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.title img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.title h3 {
+  font-size: 18px;
+  padding: 15px 12px;
+  color: #222;
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title a {
+  display: inline-block;
+  text-decoration: none;
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.title a:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px 15px;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .title img {
+    height: 250px;
+  }
+}
