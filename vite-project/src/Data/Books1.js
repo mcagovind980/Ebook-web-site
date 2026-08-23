@@ -4,7 +4,7 @@ const books = [
 
     title: "सकारात्मक सोच की शक्ति",
 
-    image: "/Images/Baiography/sakaratmaksoachkishakti-F.webp",
+    image: "/Images/Baiography/OIP3.jpg",
 
     author: "Norman Vincent Peale",
 
@@ -16,9 +16,9 @@ const books = [
 
     rating: 4.8,
 
-    link: "/pdf/sakaratmaksoachkishakti.pdf",
+    link: "https://drive.google.com/file/d/1kiRsWSXr4-5bbSSm5r8Gm2PgegPt_T-o/view?usp=drive_link",
 
-    buyLink: "/buy/sakaratmaksoachkishakti",
+    buyLink: "https://drive.google.com/file/d/1kiRsWSXr4-5bbSSm5r8Gm2PgegPt_T-o/view?usp=drive_link",
 
     description: "एक प्रेरणादायक पुस्तक जो सकारात्मक सोच की शक्ति के बारे में बताती है।",
 

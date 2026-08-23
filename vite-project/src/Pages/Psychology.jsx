@@ -1,3 +1,4 @@
+import books from "../Data/Psychology1"
 function psychology()
 {
     return (

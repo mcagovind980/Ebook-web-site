@@ -85,12 +85,19 @@ path:"/Alone"
         image:"/public/Images/Home/R.jpg ",
         path:"Psychology"
     }
-,
+   ,
     {
         id:14,
         title:"Think",
         image:"/public/Images/Home/OIP7.jpg ",
         path:"Think"
+    }
+   ,
+    {
+        id:15,
+        title:"HindiMotivational1",
+        image:"/public/Images/Home/OIP10.jpg ",
+        path:"HindiMotivational11"
     }
 
 ]

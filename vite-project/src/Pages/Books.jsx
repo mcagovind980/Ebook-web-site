@@ -1,4 +1,4 @@
-import books from "../Data/Baiography1";
+import books from "../Data/Books1";
 
 function Home() {
   return (
@@ -31,7 +31,7 @@ function Home() {
               </p>
 
               <p className="rating">
-                ⭐ {book.rating}
+                ⭐⭐⭐⭐ {book.rating}
               </p>
 
               <div className="price-box">

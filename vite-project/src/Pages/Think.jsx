@@ -1,3 +1,5 @@
+import books from "../Data/Think1"
+
 function psychology()
 {
     return (

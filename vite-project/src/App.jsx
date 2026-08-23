@@ -20,7 +20,7 @@ import EnglishMindBook from "./Pages/EnglishMindBook";
 import MindControl from "./Pages/MindControl";
 import Motivation from "./Pages/Motivation";
 import Psychology from "./Pages/Psychology";
-import HindiMotivational from "./Pages/HindiMotivational";
+import HindiMotivational11 from "./Pages/HindiMotivational11";
 // import Reader from "./Pages/Reader";
 import HomePages from "./Pages/HomePages";
 import AboutMind from "./Pages/AboutMind";
@@ -45,8 +45,8 @@ function App() {
        <Route path="/Categories" element={<Categories/>}/>
        {/* <Route path="/Contact" element={<Contact/>}/> */}
        <Route path="/EnglishMindBook" element={<EnglishMindBook/>}/>
-       <Route path="HindiMotivational" element={<HindiMotivational/>}/>
-       <Route path="LongBook" element={<LongBook/>} />
+       <Route path="/HindiMotivational11" element={<HindiMotivational11/>}/>
+       <Route path="/LongBook" element={<LongBook/>} />
       <Route path="/Manipulation" element={<Manipulation/>}/>
 <Route path="/MindControl" element={<MindControl/>}/>
 <Route path="/Motivation" element={<Motivation/>}/>

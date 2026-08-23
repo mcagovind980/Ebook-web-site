@@ -1,4 +1,4 @@
-import books from "../Data/"
+import books from "../Data/MindControl1"
 function Mind()
 {
     return(
@@ -12,7 +12,7 @@ function Mind()
 view Pdf
 </a>
 
-    </div>
+</div>
 
 
 ))}
