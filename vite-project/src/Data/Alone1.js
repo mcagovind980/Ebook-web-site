@@ -34,10 +34,56 @@ const books = [
     
     viewLink: "https://drive.google.com/file/d/1MdnaaM6tg-clJfyIo9armlRvnf3pMXdx/view?usp=drive_link",
   },
+  
   ,
   
   {
     id: 5,
+    title: "   How to Be Alone ",
+    image:"/public/Images/Alone/OIP2.jpg",
+    
+    viewLink: "https://drive.google.com/file/d/1NUy_rPnm5TZpQ946ZJlWMqBCtrxyICkc/view?usp=drive_link",
+  }
+  ,
+  
+  {
+    id: 6,
+    title: "   How to Be Alone ",
+    image:"/public/Images/Alone/OIP2.jpg",
+    
+    viewLink: "https://drive.google.com/file/d/1NUy_rPnm5TZpQ946ZJlWMqBCtrxyICkc/view?usp=drive_link",
+  }
+  ,
+  
+  {
+    id: 7,
+    title: "   How to Be Alone ",
+    image:"/public/Images/Alone/OIP2.jpg",
+    
+    viewLink: "https://drive.google.com/file/d/1NUy_rPnm5TZpQ946ZJlWMqBCtrxyICkc/view?usp=drive_link",
+  }
+  ,
+  
+  {
+    id: 8,
+    title: "   How to Be Alone ",
+    image:"/public/Images/Alone/OIP2.jpg",
+    
+    viewLink: "https://drive.google.com/file/d/1NUy_rPnm5TZpQ946ZJlWMqBCtrxyICkc/view?usp=drive_link",
+  }
+  ,
+  
+  {
+    id: 9,
+    title: "   How to Be Alone ",
+    image:"/public/Images/Alone/OIP2.jpg",
+    
+    viewLink: "https://drive.google.com/file/d/1NUy_rPnm5TZpQ946ZJlWMqBCtrxyICkc/view?usp=drive_link",
+  }
+  ,
+  
+  {
+    id: 10,
     title: "   How to Be Alone ",
     image:"/public/Images/Alone/OIP2.jpg",
     
