@@ -4,7 +4,7 @@ const books=[
     {
 id:1,
 title:"Alone",
-image:"Online_Image_Url",
+image:"/public/Images/Home/download1.jpg",
 path:"/Alone"
     }
     ,
@@ -37,13 +37,7 @@ path:"/Alone"
         path:"/Brain"
     }
 ,
-    {
-        id:6,
-        title:"Categories",
-        image:"/public/Images/Home/",
-        path:"/Categories"
-    }
-,
+
     {
         id:7,
         title:"EnglishMindBook",

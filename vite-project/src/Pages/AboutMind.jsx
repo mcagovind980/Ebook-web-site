@@ -1,25 +1,49 @@
-import books from "../Data/AboutMind1"
-function Mind()
-{
-return(
-    <div className="container">
+import { useRef } from "react";
+import books from "../Data/AboutMind1";
+import "../css/Home1.css";
 
-        <div className="card">
+function Pages() {
+  const cardRef = useRef(null);
 
-{ books.map((book)=>
-(
-<div className="item" key={book.id}>
-<img src={book.image} alt={book.title}/>
-<h3>{ book.title}</h3>
-<a href={book.viewLink} target="_blank" rel="noopener noreferrer">View Pdf</a>
-</div>
+  const scrollLeft = () => {
+    cardRef.current.scrollBy({
+      left: -250,
+      behavior: "smooth",
+    });
+  };
 
-)
+  const scrollRight = () => {
+    cardRef.current.scrollBy({
+      left: 250,
+      behavior: "smooth",
+    });
+  };
 
-)}
- </div>
+  return (
+<div className="pages">
+<div className="container">
+
+      <button className="scroll-btn left-btn" onClick={scrollLeft}>
+        ❮
+      </button>
+
+      <div className="card" ref={cardRef}>
+        {books.map((book) => (
+          <div className="title" key={book.id}>
+            <img src={book.image} alt={book.title} />
+            <h3>{book.title}</h3>
+            <a href={book.viewLink}>View Pages</a>
+          </div>
+        ))}
+      </div>
+
+      <button className="scroll-btn right-btn" onClick={scrollRight}>
+        ❯
+      </button>
+
     </div>
-)
-
+    </div>
+  );
 }
-export default Mind
+
+export default Pages;

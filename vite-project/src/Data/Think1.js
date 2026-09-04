@@ -11,7 +11,7 @@ const books=[
         id:2,
         title:"Change Your Thinking Change Your Life",
         image:"/public/Images/Thinks/OIP.jpg",
-        viewLink:"https://drive.google.com/file/d/17htGohf__9rd_jzzRdimgIIzEJPPW7d7/view?usp=drive_link"
+        viewLink:"https://drive.google.com/file/d/1gXo3Feywi-Y4ee3QTgcq0QBDqMdXpy2D/view?usp=drive_link"
     }
     ,
     {

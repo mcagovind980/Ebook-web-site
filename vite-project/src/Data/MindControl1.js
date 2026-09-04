@@ -1,8 +1,72 @@
 const books=[
     {
         id:1,
-        title:"MindControl",
-
+        title:"How_to_Take_Immediate_Control",
+        image:"/public/Images/MindControl/OIP.jpg",
+        viewLInk:""
+    }
+         ,
+    {
+        id:2,
+        title:"How_to_Take_Immediate_Control",
+        image:"/public/Images/MindControl/OIP.jpg",
+        viewLInk:""
+    }
+         ,
+    {
+        id:3,
+        title:"How_to_Take_Immediate_Control",
+        image:"/public/Images/MindControl/OIP.jpg",
+        viewLInk:""
+    }
+         ,
+    {
+        id:4,
+        title:"How_to_Take_Immediate_Control",
+        image:"/public/Images/MindControl/OIP.jpg",
+        viewLInk:""
+    }
+         ,
+    {
+        id:5,
+        title:"How_to_Take_Immediate_Control",
+        image:"/public/Images/MindControl/OIP.jpg",
+        viewLInk:""
+    }
+         ,
+    {
+        id:6,
+        title:"How_to_Take_Immediate_Control",
+        image:"/public/Images/MindControl/OIP.jpg",
+        viewLInk:""
+    }
+         ,
+    {
+        id:7,
+        title:"How_to_Take_Immediate_Control",
+        image:"/public/Images/MindControl/OIP.jpg",
+        viewLInk:""
+    }
+         ,
+    {
+        id:8,
+        title:"How_to_Take_Immediate_Control",
+        image:"/public/Images/MindControl/OIP.jpg",
+        viewLInk:""
+    }
+         ,
+    {
+        id:9,
+        title:"How_to_Take_Immediate_Control",
+        image:"/public/Images/MindControl/OIP.jpg",
+        viewLInk:""
+    }
+         ,
+    {
+        id:10,
+        title:"How_to_Take_Immediate_Control",
+        image:"/public/Images/MindControl/OIP.jpg",
+        viewLInk:""
     }
 ]
 export default books

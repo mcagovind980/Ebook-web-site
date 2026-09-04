@@ -21,7 +21,7 @@ function Navbar() {
             Categories
           </NavLink> */}
 
-          <NavLink to="/All_Books">
+          <NavLink to="/AllBooks">
             All Books
           </NavLink>
           <NavLink to="/Popular_Books">

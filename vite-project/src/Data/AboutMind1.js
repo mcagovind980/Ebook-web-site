@@ -1,28 +1,28 @@
 const books=[
        {
     id:1,
-    title:"Mind_to_Matter_-_Dawson_Church",
+    title:"Mind_to_Matter_-_Dawson_Church11",
     image:"/public/Images/AboutMind/OIP1.jpg",
     viewLink:"https://drive.google.com/file/d/1ITQIIgJJlH7OtJylmB_mNqKg1aP3IlOF/view?usp=drive_link"
     }
    ,
     {
     id:2,
-    title:"Mind_to_Matter_-_Dawson_Church",
+    title:"Mind_to_Matter_-_",
     image:"/public/Images/AboutMind/OIP1.jpg",
     viewLink:"https://drive.google.com/file/d/1ITQIIgJJlH7OtJylmB_mNqKg1aP3IlOF/view?usp=drive_link"
     }
    ,
     {
     id:3,
-    title:"Mind_to_Matter_-_Dawson_Church",
+    title:"Mind_to_Church",
     image:"/public/Images/AboutMind/OIP1.jpg",
     viewLink:"https://drive.google.com/file/d/1ITQIIgJJlH7OtJylmB_mNqKg1aP3IlOF/view?usp=drive_link"
     }
    ,
     {
     id:4,
-    title:"Mind_to_Matter_-_Dawson_Church",
+    title:"Mind_to_Matter_-_Dawson11131313_Church",
     image:"/public/Images/AboutMind/OIP1.jpg",
     viewLink:"https://drive.google.com/file/d/1ITQIIgJJlH7OtJylmB_mNqKg1aP3IlOF/view?usp=drive_link"
     }

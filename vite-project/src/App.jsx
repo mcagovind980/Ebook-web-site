@@ -3,6 +3,7 @@ import React from "react";
 import Navbar from "./Component/Navbar";
 
 import Home from "./Pages/Home";
+import AllBooks from "./Pages/AllBooks";
 import Alone from "./Pages/Alone";
 import About from "./Pages/About";
 import Baiography from "./Pages/Baiography";
@@ -12,7 +13,7 @@ import LongBook from "./Pages/LongBook";
 import Books from "./Pages/Books";
 import Brain from "./Pages/Brain";
 import Manipulation from "./Pages/Manipulation";
-import Categories from "./Pages/Categories";
+// import Categories from "./Pages/Categories";
 // import Contact from "./Pages/Contact";
 
 // import Manipulation from "./Pages/EnglishMindBook";
@@ -32,6 +33,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/AllBooks" element={<AllBooks/>} />
         <Route path="/" element={<HomePages/>} />
 
         <Route path="/Alone" element={<Alone />} />
@@ -42,7 +44,6 @@ function App() {
         {/* <Route path="/BookDetails" element={<BookDetails/>}/> */}
         <Route path="/Books" element={<Books/>}/>
        <Route path="/Brain" element={<Brain/>}/>
-       <Route path="/Categories" element={<Categories/>}/>
        {/* <Route path="/Contact" element={<Contact/>}/> */}
        <Route path="/EnglishMindBook" element={<EnglishMindBook/>}/>
        <Route path="/HindiMotivational11" element={<HindiMotivational11/>}/>
