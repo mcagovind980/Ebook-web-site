@@ -4,35 +4,35 @@ const books=[
         id:1,
         title:"Hours_ You Have More Time Than You Think",
         image:"/public/Images/Motivation12/OIP.jpg",
-        viewLink:""
+        viewLink:"https://drive.google.com/file/d/1ACapxVoqBqs9JOyrgnClLxIn5HfOi4JF/view?usp=drive_link"
     }
    ,
     {
         id:2,
-        title:"Hours_ You Have More Time Than You Think",
-        image:"/public/Images/Motivation12/OIP.jpg",
-        viewLink:""
+        title:" Attract The Right Girl_ How To Find Your Perfect Girl And Make Her Chase You For A Relationship ",
+        image:"/public/Images/Motivation12/OIP4.jpg",
+        viewLink:"https://drive.google.com/file/d/1FTWzTK6dCc1M7TyT4ihcplKB3fosNHrS/view?usp=drive_link"
     }
    ,
     {
         id:3,
-        title:"Hours_ You Have More Time Than You Think",
-        image:"/public/Images/Motivation12/OIP.jpg",
-        viewLink:""
+        title:"Collapse - How Societies Choose to Fail or Succeed",
+        image:"/public/Images/Motivation12/OIP5.jpg",
+        viewLink:"https://drive.google.com/file/d/1vfjOa7a0Rb2EJp0224OtxdLalF32KYSR/view?usp=drive_link"
     }
    ,
     {
         id:4,
-        title:"Hours_ You Have More Time Than You Think",
-        image:"/public/Images/Motivation12/OIP.jpg",
-        viewLink:""
+        title:"Fail, Fail Again, Fail Better_ Wise Advice for Leaning into the Unknown",
+        image:"/public/Images/Motivation12/OIP6.jpg",
+        viewLink:"https://drive.google.com/file/d/1Bl-NcJSg2wbddEIlC06DSgX3igjjKGdZ/view?usp=drive_link"
     }
    ,
     {
         id:5,
-        title:"Hours_ You Have More Time Than You Think",
-        image:"/public/Images/Motivation12/OIP.jpg",
-        viewLink:""
+        title:"how to lay girls guide ",
+        image:"/public/Images/Motivation12/download3.jpg",
+        viewLink:"https://drive.google.com/file/d/1oUo0nvgPsNdiicOP4OY3vfOJ_agQ5URe/view?usp=drive_link"
     }
    ,
     {
