@@ -32,7 +32,7 @@ const books=[
     {
         id:5,
         title:"जिद करो दुनिया बदलो",
-        Image:"/public/Images/Baiography/Screenshot (18).jpg",
+        Image:"/public/Images/Baiography/OIP1111.jpg",
         Link:"https://drive.google.com/file/d/18Jvfm_Y4KD-WFO776S9gzIrwNjPM-SNe/view?usp=drive_link"
     },
 
