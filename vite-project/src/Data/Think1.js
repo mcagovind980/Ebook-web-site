@@ -52,7 +52,7 @@ const books=[
     {
         id:8,
         title:"59_Seconds_Think_a_Little_Change_a_Lot",
-        image:"/public/Images/download4.jpg",
+        image:"/public/Images/Thinks/download4.jpg",
         viewLink:"https://drive.google.com/file/d/1dR0xjNAm35Q_-mJjtzghRNZDAIsWkNCS/view?usp=drive_link"
     }
     ,
