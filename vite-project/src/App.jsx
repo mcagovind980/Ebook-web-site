@@ -173,6 +173,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./Component/Navbar";
 
 // User pages
+
 import Home from "./Pages/Home";
 import AllBooks from "./Pages/AllBooks";
 import Alone from "./Pages/Alone";
@@ -196,12 +197,13 @@ import UserLogin from "./Component/UserLogin";
 
 // Admin
 import AdminBooks from "./Component/AdminBooks";
+import AdminRegister from "./Component/AdminRegister";
 import AdminLogin from "./Component/AdminLogin";
+
 
 // Protection
 import ProtectedRoute from "./Component/ProtectedRoute";
 import ProtectedUserRoute from "./Component/ProtectedUserRoute";
-
 
 function App() {
   return (
@@ -228,11 +230,15 @@ function App() {
         {/* =========================
             PUBLIC ADMIN LOGIN
         ========================= */}
+<Route
+  path="/admin/register"
+  element={<AdminRegister />}
+/>
 
-        <Route
-          path="/admin/login"
-          element={<AdminLogin />}
-        />
+<Route
+  path="/admin/login"
+  element={<AdminLogin />}
+/>
 
 
         {/* =========================
