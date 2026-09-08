@@ -1,12 +1,25 @@
-function AllBooks()
-{
-    return(
+import books from "../Data/Allbooks1"
+function Home() {
+  return (
+    <main className="home">
+      <div className="card">
+        {books.map((book) => (
+          <div className="item" key={book.id}>
+            <img src={book.image} alt={book.title} />
 
-        <>
-        <h1>Hello</h1>
-        
-        </>
-    )
+            <h3>{book.title}</h3>
+
+            <a
+              href={book.viewLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View PDF
+            </a>
+          </div>
+))}
+      </div>
+    </main>
+  );
 }
-
-export default AllBooks
+  export default Home;

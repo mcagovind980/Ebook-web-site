@@ -2,9 +2,9 @@ const books = [
   {
     id: 1,
 
-    title: "सकारात्मक सोच की शक्ति",
+    title: "1._100_ways_to_motivate_yourself",
 
-    image: "/Images/Baiography/OIP3.jpg",
+    image: "/Images/Books/OIP.jpg",
 
     author: "Norman Vincent Peale",
 
