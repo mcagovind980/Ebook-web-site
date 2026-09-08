@@ -200,28 +200,72 @@
 // import express from "express";
 // import cors from "cors";
 // import bookRoutes from "./routes/bookRoutes.js";
-const express=require("express")
-const cors=require("cors")
-const bookRoutes=require("./routes/bookRoutes.js")
-const app = express();
+// const adminRoutes = require("./routes/adminRoutes.js");
 
+// const express=require("express")
+// const cors=require("cors")
+// const bookRoutes=require("./routes/bookRoutes.js")
+// const app = express();
+// const connectDB = require("./config/db.js");
+
+// app.use(express.json());
+
+// app.use("/api/admin", adminRoutes);
+// const PORT = 5000;
+// connectDB ();
+// // CORS
+// app.use(cors({
+//   origin: "http://localhost:5173"
+// }));
+
+// // JSON
+// app.use(express.json());
+
+// // Home
+// app.get("/", (req, res) => {
+//   res.send("Ebook Backend is Running!");
+// });
+
+// // Books API
+// app.use("/api/books", bookRoutes);
+
+// app.listen(PORT, () => {
+//   console.log(`Server running on http://localhost:${PORT}`);
+// });
+
+
+
+
+const express = require("express");
+const cors = require("cors");
+
+const bookRoutes = require("./routes/bookRoutes.js");
+const adminRoutes = require("./routes/adminRoutes.js");
+const connectDB = require("./config/db.js");
+const userRoutes = require("./routes/userRoutes.js");
+
+const app = express();
 const PORT = 5000;
 
-// CORS
-app.use(cors({
-  origin: "http://localhost:5173"
-}));
+connectDB();
 
-// JSON
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"]
+  })
+);
+
 app.use(express.json());
 
-// Home
 app.get("/", (req, res) => {
   res.send("Ebook Backend is Running!");
 });
 
-// Books API
 app.use("/api/books", bookRoutes);
+app.use("/api/admin", adminRoutes);
+app.use("/api/users", userRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);

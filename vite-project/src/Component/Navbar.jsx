@@ -27,13 +27,22 @@ function Navbar() {
           <NavLink to="/Popular_Books">
           Popular Books
           </NavLink>
- <NavLink to="/Login">
-   Login
- </NavLink>
+
  <NavLink to="/Contact">
     Contact
  </NavLink>
+  
 
+        <NavLink to="/admin/login">
+          Admin Login
+        </NavLink>
+<NavLink to="/register">
+  Register
+</NavLink>
+
+<NavLink to="/login">
+  User Login
+</NavLink>
         </div>
       </nav>
   
