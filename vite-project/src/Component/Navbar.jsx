@@ -1,16 +1,17 @@
 import { NavLink } from "react-router-dom";
 
-
+import "../css/Navbar.css"
 // import Alone from "../Pages/Alone.jsx"
 import About from "../Pages/About.jsx"
 
 function Navbar() {
   return (
     <>
-      <nav className="navbar">
-        <div className="logo">
+       <div className="logo">
           MyWebsite
-        </div>
+        
+      <nav className="navbar">
+     
 
         <div className="nav-link">
           <NavLink to="/" end>
@@ -36,8 +37,11 @@ function Navbar() {
         <NavLink to="/admin/login">
           Admin Login
         </NavLink>
+        <NavLink to="/admin/register">
+          Admin Register
+        </NavLink>
 <NavLink to="/register">
-  Register
+  User Register
 </NavLink>
 
 <NavLink to="/login">
@@ -45,7 +49,7 @@ function Navbar() {
 </NavLink>
         </div>
       </nav>
-  
+  </div>
     </>
   );
 }

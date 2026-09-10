@@ -1,5 +1,8 @@
 // import books from "../Data/Alone1";
 import { useState, useEffect } from "react";
+// import "../css/Biography.css"
+import "../css/App.css";
+
 function Home() {
 
     const [books, setBooks] = useState([]);

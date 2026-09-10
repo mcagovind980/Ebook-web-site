@@ -1,9 +1,10 @@
 import books from "../Data/Baiography1";
+import "../css/App.css";
 
 
 function Home() {
   return (
-    <main className="home">
+    <div className="container">
       <div className="card">
         {books.map((book) => (
           <div className="item" key={book.id}>
@@ -21,7 +22,7 @@ function Home() {
           </div>
         ))}
       </div>
-    </main>
+      </div>
   );
 }
 

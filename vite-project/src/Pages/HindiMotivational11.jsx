@@ -2,8 +2,8 @@ import books from "../Data/Hindi_Motivational111";
 
 function Home() {
   return (
-    <main className="home">
-      <div className="card">
+    <main className="container">
+        <div className="card">
         {books.map((book) => (
           <div className="item" key={book.id}>
             <img src={book.image} alt={book.title} />

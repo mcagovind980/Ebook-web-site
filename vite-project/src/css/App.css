@@ -1,663 +1,830 @@
 
-.navbar
-{
-    border: 3px solid ;
-   width:100% ;
-height:80%; 
-background: linear-gradient(to right,rgb(246, 164, 164),rgb(255, 255, 136),rgb(146, 248, 146));
-height:80px;
-text-align: center;
-}
-.nav-link{
-    margin-top: 20px;
-    display: flex;
-justify-content: space-between;
-background-color: rgb(194, 255, 255);
-}
-.nav-link a
-{
-
-text-decoration: none;
- color: inherit;
- color:blue;
-}
-
-
-
-.home{
-    background-color: aqua;
-}
-
- .item{
-    border: 2px solid rgb(255, 3, 3);
-    width: 230px;
-    height: 250px;
-} 
-
-    img{
-        width: 60pxs;
-        
-    }
-
-    /* Main Home Section */
-.home {
-  min-height: 100vh;
-  padding: 40px 20px;
-  background: #f5f7fb;
-}
-
-/* Books Container */
-.card {
-
-  margin: auto;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 10px;
-}
-
-/* Single Book Card */
-.item {
-  background: #ffffff;
-  border-radius: 15px;
-  overflow: hidden;
-
-  padding: 15px;
-  text-align: center;
-
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover Effect */
-.item:hover {
-  transform: translateY(-8px);
-
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-/* Book Image */
-.item img {
-  width: 50%;
-  height: 70%;
-
-  /* object-fit: cover; */
-  border-radius: 10px;
-box-shadow:  3px 4px 7px black;
-  transition: transform 0.3s ease;
-}
-
-/* Image Zoom */
-.item:hover img {
-  transform: scale(1.03);
-}
-
-/* Book Title */
-.item h3 {
-  margin: 15px 0;
-  font-size: 10px;
-  color: #222;
-}
-
-/* View PDF Button */
-.item a {
-  display: inline-block;
-
-  padding: 10px 20px;
-
-  background: #7296e3;
-  color: white;
-
-  text-decoration: none;
-  border-radius: 8px;
-
-  font-weight: 600;
-
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-
-/* Button Hover */
-.item a:hover {
-  background: #1d4ed8;
-  transform: scale(1.05);
-}
-
-/* Tablet */
-@media (max-width: 768px) {
-  .home {
-    padding: 25px 15px;
-  }
-
-  .card {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-
-  .item img {
-    height: 240px;
-  }
-
-  .item h3 {
-    font-size: 17px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  .card {
-    grid-template-columns: 1fr;
-  }
-
-  .item img {
-    height: 300px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =========================
-   HOME PAGE
-========================= */
-
-.home {
-  min-height: 100vh;
-  padding: 40px 5%;
-  background: #f5f5f5;
-}
-
-
-/* =========================
-   BOOKS GRID
-========================= */
-
-.books-grid {
-  max-width: 1400px;
-  margin: auto;
-
-  display: grid;
-
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-
-  gap: 25px;
-}
-
-
-/* =========================
-   BOOK CARD
-========================= */
-
-.book-card {
-  background: #ffffff;
-
-  border-radius: 12px;
-
-  overflow: hidden;
-
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
-
-  transition: transform 0.3s ease,
-              box-shadow 0.3s ease;
-}
-
-.book-card:hover {
-  transform: translateY(-7px);
-
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-
-/* =========================
-   BOOK IMAGE
-========================= */
-
-.book-image-box {
-  position: relative;
-
-  width: 100%;
-  height: 300px;
-
-  overflow: hidden;
-
-  background: #eeeeee;
-}
-
-.book-image-box img {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-
-  display: block;
-
-  transition: transform 0.4s ease;
-}
-
-.book-card:hover .book-image-box img {
-  transform: scale(1.05);
-}
-
-
-/* =========================
-   DISCOUNT BADGE
-========================= */
-
-.discount {
-  position: absolute;
-
-  top: 12px;
-  right: 12px;
-
-  padding: 6px 10px;
-
-  background: #e53935;
-
-  color: white;
-
-  font-size: 12px;
-  font-weight: bold;
-
-  border-radius: 5px;
-}
-
-
-/* =========================
-   BOOK INFORMATION
-========================= */
-
-.book-info {
-  padding: 16px;
-}
-
-.category {
-  margin: 0 0 7px;
-
-  font-size: 13px;
-  font-weight: 600;
-
-  color: #777;
-
-  text-transform: uppercase;
-}
-
-
-/* =========================
-   BOOK TITLE
-========================= */
-
-.book-info h3 {
-  margin: 0 0 8px;
-
-  font-size: 18px;
-
-  color: #222;
-
-  line-height: 1.4;
-
-  min-height: 50px;
-
-  display: -webkit-box;
-
-  -webkit-line-clamp: 2;
-
-  -webkit-box-orient: vertical;
-
-  overflow: hidden;
-}
-
-
-/* =========================
-   AUTHOR
-========================= */
-
-.author {
-  margin: 0 0 8px;
-
-  font-size: 14px;
-
-  color: #666;
-}
-
-
-/* =========================
-   RATING
-========================= */
-
-.rating {
-  margin: 8px 0;
-
-  font-size: 14px;
-
-  font-weight: 600;
-
-  color: #333;
-}
-
-
-/* =========================
-   PRICE
-========================= */
-
-.price-box {
-  display: flex;
-
-  align-items: center;
-
-  gap: 10px;
-
-  margin: 10px 0;
-}
-
-.price {
-  font-size: 22px;
-
-  font-weight: bold;
-
-  color: #111;
-}
-
-.original-price {
-  font-size: 14px;
-
-  color: #888;
-
-  text-decoration: line-through;
-}
-
-
-/* =========================
-   STOCK
-========================= */
-
-.stock {
-  margin: 8px 0 15px;
-
-  font-size: 13px;
-
-  font-weight: 600;
-
-  color: #198754;
-}
-
-
-/* =========================
-   BUTTONS
-========================= */
-
-.book-buttons {
-  display: flex;
-
-  gap: 10px;
-}
-
-.view-btn,
-.buy-btn {
-  flex: 1;
-
-  padding: 11px 8px;
-
-  border-radius: 7px;
-
-  text-align: center;
-
-  text-decoration: none;
-
-  font-size: 14px;
-
-  font-weight: bold;
-
-  transition: 0.3s;
-}
-
-
-/* VIEW PDF BUTTON */
-
-.view-btn {
-  background: #f1f1f1;
-
-  color: #333;
-}
-
-.view-btn:hover {
-  background: #dddddd;
-
-  transform: translateY(-2px);
-}
-
-
-/* BUY NOW BUTTON */
-
-.buy-btn {
-  background: #ff6b00;
-
-  color: white;
-}
-
-.buy-btn:hover {
-  background: #e85f00;
-
-  transform: translateY(-2px);
-}
-
-
-/* =========================
-   TABLET
-========================= */
-
-@media (max-width: 768px) {
-
-  .home {
-    padding: 25px 15px;
-  }
-
-  .books-grid {
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 15px;
-  }
-
-  .book-image-box {
-    height: 250px;
-  }
-
-  .book-info {
-    padding: 12px;
-  }
-
-  .book-info h3 {
-    font-size: 16px;
-  }
-
-  .book-buttons {
-    flex-direction: column;
-  }
-
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 480px) {
-
-  .home {
-    padding: 15px 10px;
-  }
-
-  .books-grid {
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 10px;
-  }
-
-  .book-image-box {
-    height: 210px;
-  }
-
-  .book-info {
-    padding: 10px;
-  }
-
-  .book-info h3 {
-    font-size: 14px;
-
-    min-height: 42px;
-  }
-
-  .author {
-    font-size: 12px;
-  }
-
-  .category {
-    font-size: 10px;
-  }
-
-  .rating {
-    font-size: 12px;
-  }
-
-  .price {
-    font-size: 18px;
-  }
-
-  .original-price {
-    font-size: 12px;
-  }
-
-  .stock {
-    font-size: 11px;
-  }
-
-  .view-btn,
-  .buy-btn {
-    font-size: 11px;
-
-    padding: 8px 4px;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #172033;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071a3d 0%,
+            #0b3b82 25%,
+            #ffffff 52%,
+            #f28500 72%,
+            #000000 100%
+        );
+
+    background-attachment: fixed;
+}
+
+
+/* =========================================================
+   MAIN 3D BACKGROUND
+   ========================================================= */
 
 .container {
-  width: 100%;
-  min-height: 100vh;
-  padding: 40px 8%;
-  background: #f5f7fb;
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 60px 35px 90px;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 5% 10%,
+            rgba(25, 216, 0, 0.307),
+            transparent 22%
+        ),
+
+        radial-gradient(
+            circle at 95% 10%,
+            rgba(255, 219, 15, 0.93),
+            transparent 23%
+        ),
+
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(6, 182, 212, 0.22),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(124, 58, 237, 0.20),
+            transparent 25%
+        ),
+
+        linear-gradient(
+            135deg,
+            #edf6ff,
+            #ffffff 45%,
+            #fff8e5 75%,
+            #fff0f0
+        );
 }
+
+
+/* =========================================================
+   3D FLOATING BACKGROUND SHAPES
+   ========================================================= */
+
+.container::before {
+    content: "";
+
+    position: absolute;
+
+    width: 380px;
+    height: 380px;
+
+    top: -180px;
+    left: -130px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 35% 35%,
+            #ff4d4d,
+            #e11d48 45%,
+            transparent 70%
+        );
+
+    opacity: 0.20;
+
+    filter: blur(5px);
+
+    box-shadow:
+        30px 40px 80px
+        rgba(220, 38, 38, 0.35);
+
+    animation:
+        floatingRed 8s ease-in-out infinite;
+}
+
+
+/* Yellow floating orb */
+
+.container::after {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    right: -120px;
+    bottom: -120px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            #fff700,
+            #f59e0b 45%,
+            transparent 72%
+        );
+
+    opacity: 0.22;
+
+    filter: blur(5px);
+
+    box-shadow:
+        -20px -20px 80px
+        rgba(245, 158, 11, 0.35);
+
+    animation:
+        floatingYellow 10s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   BOOK GRID
+   ========================================================= */
 
 .card {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+    max-width: 1450px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 32px;
+
+    perspective: 1400px;
 }
 
-.title {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  text-align: center;
-  padding-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
-  transition: 0.3s ease;
+
+/* =========================================================
+   PREMIUM BOOK CARD
+   ========================================================= */
+
+.item {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+
+    min-height: 455px;
+
+    padding: 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+
+    border: 2px solid
+        rgba(255, 255, 255, 0.85);
+
+    background:
+    radial-gradient(
+        circle at 15% 10%,
+        rgba(255, 255, 255, 0.95),
+        transparent 12%
+    ),
+    radial-gradient(
+        circle at 85% 20%,
+        rgba(255, 255, 255, 0.60),
+        transparent 16%
+    ),
+    radial-gradient(
+        circle at 50% 100%,
+        rgba(0, 255, 200, 0.45),
+        transparent 35%
+    ),
+    linear-gradient(
+        135deg,
+        #00a878 0%,
+        #00e6a0 20%,
+        #ff7d7d 45%,
+        #fff51c 60%,
+        #ffe98f 78%,
+        #d2ff71 100%
+    );
+
+box-shadow:
+    inset 0 2px 10px rgba(255, 255, 255, 0.8),
+    inset 0 -15px 30px rgba(0, 100, 70, 0.20),
+    0 20px 50px rgba(0, 180, 130, 0.30);
+
+    box-shadow:
+
+        /* bottom depth */
+        0 8px 0
+        rgba(30, 64, 175, 0.15),
+
+        /* main shadow */
+        0 15px 30px
+        rgba(15, 23, 42, 0.12),
+
+        /* blue glow */
+        0 25px 55px
+        rgba(37, 99, 235, 0.12),
+
+        /* inner light */
+        inset 0 1px 2px
+        rgba(255, 255, 255, 1);
+
+    transform-style: preserve-3d;
+
+    transition:
+        transform 0.45s cubic-bezier(.2,.8,.2,1),
+        box-shadow 0.45s ease;
 }
 
-.title:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+
+/* =========================================================
+   MULTI-COLOR CARD TOP
+   ========================================================= */
+
+.item::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #2563eb,
+            #06b6d4,
+            #22c55e,
+            #facc15,
+            #f97316,
+            #ef4444,
+            #7c3aed
+        );
+
+    background-size: 300% 100%;
+
+    animation:
+        rainbowLine 6s linear infinite;
 }
 
-.title img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  display: block;
+
+/* =========================================================
+   CARD CORNER LIGHT
+   ========================================================= */
+
+.item::after {
+    content: "";
+
+    position: absolute;
+
+    top: -100px;
+    right: -100px;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(37, 99, 235, 0.18),
+            rgba(124, 58, 237, 0.08),
+            transparent 70%
+        );
+
+    pointer-events: none;
 }
 
-.title h3 {
-  font-size: 18px;
-  padding: 15px 12px;
-  color: #222;
-  min-height: 75px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+/* =========================================================
+   3D CARD HOVER
+   ========================================================= */
+
+.item:hover {
+
+    transform:
+        translateY(-18px)
+        rotateX(3deg)
+        rotateY(-3deg)
+        scale(1.015);
+
+    box-shadow:
+
+        0 12px 0
+        rgba(30, 64, 175, 0.18),
+
+        0 25px 35px
+        rgba(15, 23, 42, 0.15),
+
+        0 40px 80px
+        rgba(37, 99, 235, 0.22),
+
+        0 0 35px
+        rgba(6, 182, 212, 0.10);
 }
 
-.title a {
-  display: inline-block;
-  text-decoration: none;
-  background: #2563eb;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-size: 15px;
-  transition: 0.3s;
+
+/* =========================================================
+   BOOK IMAGE
+   ========================================================= */
+
+.item img {
+
+    position: relative;
+
+    z-index: 3;
+
+    display: block;
+
+    width: 100%;
+    height: 255px;
+
+    padding: 12px;
+
+    margin-top: 5px;
+    margin-bottom: 18px;
+
+    object-fit: contain;
+
+    border-radius: 17px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #8affbb,
+            #fcff57,
+            #72deff
+        );
+
+    border: 1px solid
+        rgba(37, 99, 235, 0.12);
+
+    box-shadow:
+
+        inset 0 0 20px
+        rgba(37, 99, 235, 0.08),
+
+        0 8px 12px
+        rgba(15, 23, 42, 0.10),
+
+        8px 10px 0
+        rgba(37, 99, 235, 0.05);
+
+    filter:
+        drop-shadow(
+            8px 12px 5px
+            rgba(15, 23, 42, 0.20)
+        );
+
+    transform:
+        translateZ(35px);
+
+    transition:
+        transform 0.45s ease,
+        filter 0.45s ease;
 }
 
-.title a:hover {
-  background: #1d4ed8;
-  transform: scale(1.05);
+
+/* =========================================================
+   BOOK IMAGE HOVER
+   ========================================================= */
+
+.item:hover img {
+
+    transform:
+        translateZ(65px)
+        translateY(-10px)
+        scale(1.05);
+
+    filter:
+        drop-shadow(
+            14px 20px 7px
+            rgba(15, 23, 42, 0.25)
+        );
 }
 
-/* Mobile Responsive */
+
+/* =========================================================
+   BOOK TITLE
+   ========================================================= */
+
+.item h3 {
+
+    position: relative;
+
+    z-index: 4;
+
+    width: 100%;
+
+    min-height: 54px;
+
+    margin: 5px 0 20px;
+
+    padding: 0 7px;
+
+    color: #172554;
+
+    font-size: 17px;
+
+    font-weight: 750;
+
+    line-height: 1.45;
+
+    word-break: break-word;
+
+    overflow: hidden;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+
+    transform:
+        translateZ(25px);
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.item:hover h3 {
+
+    color: #dc2626;
+
+    transform:
+        translateZ(35px);
+}
+
+
+/* =========================================================
+   PREMIUM PDF BUTTON
+   ========================================================= */
+
+.item a {
+
+    position: relative;
+
+    z-index: 5;
+
+    width: 100%;
+
+    margin-top: auto;
+
+    padding: 13px 20px;
+
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: 750;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb 0%,
+            #4f46e5 45%,
+            #7c3aed 100%
+        );
+
+    box-shadow:
+
+        0 6px 0
+        #1e3a8a,
+
+        0 12px 22px
+        rgba(37, 99, 235, 0.30);
+
+    transform:
+        translateZ(35px);
+
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        background 0.3s ease;
+}
+
+
+/* =========================================================
+   BUTTON SHINE
+   ========================================================= */
+
+.item a::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 65%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.45),
+            transparent
+        );
+
+    transform:
+        skewX(-25deg);
+
+    transition:
+        left 0.65s ease;
+}
+
+
+.item a:hover::before {
+    left: 140%;
+}
+
+
+/* =========================================================
+   BUTTON HOVER
+   ========================================================= */
+
+.item a:hover {
+
+    background:
+        linear-gradient(
+            135deg,
+            #06b6d4,
+            #2563eb,
+            #7c3aed
+        );
+
+    transform:
+        translateZ(50px)
+        translateY(-4px);
+
+    box-shadow:
+
+        0 8px 0
+        #312e81,
+
+        0 18px 30px
+        rgba(79, 70, 229, 0.35);
+}
+
+
+/* =========================================================
+   BUTTON CLICK
+   ========================================================= */
+
+.item a:active {
+
+    transform:
+        translateZ(25px)
+        translateY(4px);
+
+    box-shadow:
+
+        0 2px 0
+        #1e3a8a,
+
+        0 5px 10px
+        rgba(37, 99, 235, 0.20);
+}
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes rainbowLine {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+@keyframes floatingRed {
+
+    0% {
+        transform:
+            translate3d(0, 0, 0)
+            scale(1);
+    }
+
+    50% {
+        transform:
+            translate3d(40px, 30px, 0)
+            scale(1.08);
+    }
+
+    100% {
+        transform:
+            translate3d(0, 0, 0)
+            scale(1);
+    }
+}
+
+
+@keyframes floatingYellow {
+
+    0% {
+        transform:
+            translate3d(0, 0, 0)
+            scale(1);
+    }
+
+    50% {
+        transform:
+            translate3d(-40px, -30px, 0)
+            scale(1.10);
+    }
+
+    100% {
+        transform:
+            translate3d(0, 0, 0)
+            scale(1);
+    }
+}
+
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+   ========================================================= */
+
+@media (max-width: 1250px) {
+
+    .card {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap: 26px;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .container {
+        padding:
+            45px 22px 65px;
+    }
+
+    .card {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 22px;
+    }
+
+    .item {
+        min-height: 435px;
+    }
+
+    .item img {
+        height: 245px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width: 600px) {
-  .container {
-    padding: 25px 15px;
-  }
 
-  .card {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+    .container {
+        padding:
+            35px 15px 55px;
+    }
 
-  .title img {
-    height: 250px;
-  }
+    .card {
+        grid-template-columns: 1fr;
+
+        max-width: 430px;
+
+        gap: 24px;
+    }
+
+    .item {
+        min-height: 435px;
+
+        border-radius: 21px;
+    }
+
+    .item img {
+        height: 270px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .item {
+        min-height: 420px;
+    }
+
+    .item img {
+        height: 250px;
+    }
+
+    .item h3 {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.item a:focus-visible {
+
+    outline:
+        3px solid
+        rgba(250, 204, 21, 0.8);
+
+    outline-offset: 4px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .item,
+    .item img,
+    .item a {
+        transition: none;
+    }
+
+    .item::before,
+    .container::before,
+    .container::after {
+        animation: none;
+    }
 }

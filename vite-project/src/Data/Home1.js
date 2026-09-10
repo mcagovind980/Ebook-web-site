@@ -1,4 +1,4 @@
-import Categories from "../Pages/Categories"
+// import Categories from "../Pages/Categories"
 
 const books=[
     {

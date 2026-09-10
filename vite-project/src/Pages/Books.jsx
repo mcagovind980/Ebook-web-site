@@ -2,11 +2,11 @@ import books from "../Data/Books1";
 
 function Home() {
   return (
-    <main className="home">
-      <div className="books-grid">
+    <main className="conatiner">
+      <div className="card">
 
         {books.map((book) => (
-          <div className="book-card" key={book.id}>
+          <div className="item" key={book.id}>
 
             <div className="book-image-box">
               <img src={book.image} alt={book.title} />

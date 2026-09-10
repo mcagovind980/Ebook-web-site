@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import "../css/Login.css"
 function UserRegister() {
   const [formData, setFormData] = useState({
     name: "",
@@ -74,7 +74,9 @@ function UserRegister() {
   };
 
   return (
-    <div className="user-register">
+    <div className="container">
+
+    <div className="user-login">
 
       <h1>User Registration</h1>
 
@@ -131,6 +133,7 @@ function UserRegister() {
 
       </form>
 
+    </div>
     </div>
   );
 }

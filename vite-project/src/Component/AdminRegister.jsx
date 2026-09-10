@@ -68,6 +68,7 @@ function AdminRegister() {
   };
 
   return (
+    <div className="container">
     <div className="admin-register">
 
       <h1>Admin Sign Up</h1>
@@ -120,6 +121,7 @@ function AdminRegister() {
         Already have an account? Login
       </button>
 
+    </div>
     </div>
   );
 }

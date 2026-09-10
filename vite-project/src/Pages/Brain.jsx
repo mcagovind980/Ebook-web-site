@@ -1,4 +1,6 @@
 import books from "../Data/Brain1"
+import "../css/App.css";
+
 function Brain()
  {
     return(

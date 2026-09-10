@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import  "../css/Login.css";
 function UserLogin() {
   const [formData, setFormData] = useState({
     email: "",
@@ -77,6 +77,7 @@ function UserLogin() {
   };
 
   return (
+    <div className="container">
     <div className="user-login">
 
       <h1>User Login</h1>
@@ -123,6 +124,7 @@ function UserLogin() {
 
       </form>
 
+    </div>
     </div>
   );
 }
