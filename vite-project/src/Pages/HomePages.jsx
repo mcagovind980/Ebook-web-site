@@ -6,8 +6,8 @@ function Homepage({book})
 
     <img src={book.image} alt={book.title}/>
     <h3>{book.title}</h3>
-    <Link to={book.path} >
-        view page   </Link>
+    <a href={book.path} >
+        view page   </a>
 </div>
         )
     }
